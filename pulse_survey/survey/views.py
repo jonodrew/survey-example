@@ -8,7 +8,7 @@ from pulse_survey.survey.forms import FeedbackForm
 from pulse_survey.survey.models import Result, Feedback
 
 
-WELLBEING_RESPONSES = {"Agree", "Strongly agree", "Disagree", "Strongly disagree", "Neither agree nor disagree"}
+WELLBEING_RESPONSES = ["Strongly disagree", "Disagree", "Neither agree nor disagree", "Agree", "Strongly agree"]
 
 
 def index(request):
