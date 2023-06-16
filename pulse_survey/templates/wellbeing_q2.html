@@ -9,7 +9,7 @@
       <div class="radio">
         {% for answer in answers %}
           {% if answer == chosen_answer %}
-            <input type="radio" name="q2" value="{{ answer }}" selected="selected">{{ answer }}<br>  
+            <input type="radio" name="q2" value="{{ answer }}" selected="selected">{{ answer }}<br>
           {% else %}
             <input type="radio" name="q2" value="{{ answer }}">{{ answer }}<br>
           {% endif %}

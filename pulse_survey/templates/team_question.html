@@ -9,7 +9,7 @@
       <div class="radio">
         {% for team in teams %}
           {% if team == chosen_team %}
-            <input type="radio" name="team" value="{{ team }}" selected="selected">{{ team }}<br>  
+            <input type="radio" name="team" value="{{ team }}" selected="selected">{{ team }}<br>
           {% else %}
             <input type="radio" name="team" value="{{ team }}">{{ team }}<br>
           {% endif %}
