@@ -1,5 +1,7 @@
 services:
   web:
+    environment:
+      SECRET_KEY: secret-docker-key # pragma: allowlist secret
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -10,11 +12,11 @@ services:
       - .:/app
     ports:
       - "8000:8000"
-  
+
   tests:
+    environment:
+      SECRET_KEY: secret-docker-key # pragma: allowlist secret
     build: .
     command: python manage.py test
     volumes:
       - .:/app
-
-
