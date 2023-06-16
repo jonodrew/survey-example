@@ -37,6 +37,9 @@ This is a Django app with a SQLite database.
 
 - Install packages with `pip install -r requirements.lock` (ideally into a virtual environment)
 - Run migrations `python manage.py migrate` (only need to do this once, or if you make changes to models)
+- You will need to set a secret key for local development. You can either do this at the beginning of the command,
+  or by setting an environment variable. If you do it in the command, it'll be `SECRET_KEY=super-secret-key <command>`
+- alternatively, run `export SECRET_KEY=super-secret-key` before running any of the commands below
 
 ### Running the app
 
